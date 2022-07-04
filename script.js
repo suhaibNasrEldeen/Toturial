@@ -15,6 +15,7 @@ getDataFromLocal();
 deleteAll.onclick = function () {
   tasks.innerHTML = "";
   window.localStorage.removeItem("tasks");
+  taskArr = [];
 };
 
 window.onload = () => input.focus();
